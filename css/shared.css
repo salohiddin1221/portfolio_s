@@ -1,0 +1,272 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1140px;
+    margin:0 auto;
+}
+
+header{
+    padding:0 30px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 3px 16px 0px rgba(0 0 0 / 10%);
+    z-index: 1;
+}
+
+/* responsive  navbar */
+
+#check{
+    display: none;
+}
+label i{
+    visibility: hidden;
+    position: absolute;
+}
+
+.to-uppercase{
+    text-transform: uppercase;
+}
+
+.clearfix{
+    clear: both;
+   
+}
+
+.blur-line{
+    display: inline-block;
+    margin-left: 0.32rem;
+    width: 80px;
+    height: 4px;
+    background: rgba(237,35,159,0.6);
+    filter: blur(4px);
+    position: relative;
+    top: -2px;
+}
+
+.section-subtitle{
+    display: inline-block;
+    margin-bottom: 0.625rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #797979;
+    text-transform: uppercase;
+    
+}
+.section-title{
+    margin-top: 0.32rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #05364d;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.section-discription{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #797979;
+    line-height: 27px;
+}
+.button{
+    margin-top: 1.9rem;
+    border: none;
+    background-color: #1c44e4;
+    color: white;
+    font-weight: 500;
+    padding: 20px 40px;
+    font-size:0.9rem ;
+    cursor: pointer;
+    border-radius: 5px;
+background:linear-gradient(to right, #1345e6 0%, #ed239f 51% , #1345e6 100%) ;
+background-size: 200% auto;
+border: none;
+}
+button:hover{
+    background-position:right center ;
+    border: none;
+}
+/*  header style  */
+.main-header__brand img{
+    width: 64px;
+}
+.main-header__brand{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-nav{
+display: inline-block;
+vertical-align: middle;
+}
+.main-nav__item{
+    display: inline-block;
+    padding: 10px;
+  
+}
+.main-nav__item a{
+    text-decoration: none;
+    color: #05364d;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.main-nav__item a:hover{
+    color:#afb6df ;
+}
+
+/* footer styles */
+
+footer{
+    padding: 100px 0 20px 0;
+    text-align: center;
+    background-color: #021017;
+    margin-top: 50px;
+    
+}
+.footer-brand img{
+    width: 86px;
+}
+.footer-navigation__items{
+    margin: 50px;
+}
+.footer-navigation__item{
+    display: inline-block;
+    padding: 0 10px;
+}
+.footer-navigation__item a{
+    color: white;
+text-decoration: none;
+}
+.footer-socials{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.footer-social{
+    display: inline-block;
+    width: 45px;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 36px;
+    color: #05364d;
+    font-size: 1rem;
+    margin-right: 12px;
+}
+.footer-social:hover{
+    background:linear-gradient(to right, #1345e6 0%, #ed239f 100% ) ;
+}
+.footer-social:hover i{
+    color: white;
+}
+.footer-social a{
+    color: #021017;
+}
+.footer-text{
+    display: inline-block;
+    color: #797979;
+}
+@media only screen and (max-width:991px){
+    header{
+        height: 70px;
+    }
+    .main-nav{
+       visibility: hidden;
+       background-color: rgba(255, 255, 255, 0.877);
+       width: 80%;
+       transition: .5s;
+    }
+    .main-header__brand img{
+        position: absolute;
+        left: 5px;
+        top: 5px;
+       
+    }
+    .main-nav__item{
+        display: block;
+        text-align: center;
+        padding: 4% 30% 4% 15%;
+    }
+    .container{
+        width: 90%;
+    }
+     /* footer section */
+     .footer-navigation{
+        display: none;
+    }
+
+
+    /*  responsive navbar */
+    label i{
+        visibility: visible;
+        position: absolute;
+        font-size: 2.2rem;
+        color: #05364E;
+        text-align: center;
+        top: 2.5vw;
+        right: 10vw;
+       cursor: pointer;
+       
+    }
+    label #cancel{
+        visibility: hidden;
+    }
+
+    /*  navbar visible */
+
+
+
+    #check:checked~.main-nav{
+        visibility: visible;
+       position: relative;
+       top: 0;
+    }
+    #check:checked~label #cancel{
+        visibility: visible;
+    }
+    #check:checked~label #btn{
+        visibility: hidden;
+    }
+    #check:checked~.main-header__brand img{
+        display: none;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:767px){
+    .container{
+        width: 90%;
+    }
+
+    
+    /* footer section */
+    .footer-navigation{
+        display: none;
+    }
+
+    /* responsive  navbar */
+
+    label i{
+        visibility: visible;
+        position: absolute;
+        font-size: 2.2rem;
+        color: #05364E;
+        text-align: center;
+        top: 2.5vw;
+        right: 20vw;
+       cursor: pointer;
+       
+    }
+
+
+    
+   
+}
