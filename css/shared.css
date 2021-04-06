@@ -58,6 +58,9 @@ body{
     margin: 0;
     letter-spacing: 1.5px;
 }
+a {
+    transition: all 0.3s ease-in-out;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -147,6 +150,7 @@ border: none;
 button:hover{
     background-position:right center ;
     border: none;
+    transition: all 0.3s ease-in-out;
 }
 /*  header style  */
 .main-header__brand img{
@@ -214,8 +218,10 @@ text-decoration: none;
     color: #05364d;
     font-size: 1rem;
     margin-right: 12px;
+    transition: all 0.8s ease;
 }
 .footer-social:hover{
+    transition: all 0.8s ease;
     background:linear-gradient(to right, #1345e6 0%, #ed239f 100% ) ;
 }
 .footer-social:hover i{
