@@ -10,11 +10,10 @@
 }
 .main-section{ 
     padding: 7.5rem 0;
+    display: flex;
+    justify-content: space-between;
 }
-.main-section div{
-    width: 50%;
-    float: left;
-}
+
 .main-image{
     text-align: right;
     
@@ -63,10 +62,11 @@
 
 .statistics{
     padding: 6.25rem 0;
+    display: flex;
     
 }
 .statistics-item{
-    display: inline-block;
+   
     background-color: #f8faff;
     text-align: center;
     padding: 0.32rem 0.62rem;
@@ -85,12 +85,14 @@
 
 .about{
     padding: 6.25rem 0;
+    display: flex;
+    align-items: center;
    
 }
 .about div{
-    width: 50%;
-  float: left;
+    flex: 1;
 }
+
 .about-image img{
     width: 70%;
 }
@@ -101,10 +103,12 @@
 .services{
     padding: 6.25rem 0;
 }
-
+.services-cards{
+    display: flex;
+    justify-content: space-between;
+}
 .service-card{
-    display: inline-block;
-    width: 30%;
+   
     padding:  3.75rem 1.87rem;
     background-color: #f8faff;
     margin-right: 3%;
@@ -146,11 +150,14 @@
 
 .clients{
     padding: 6.25rem 0;
+    display: flex;
 
 }
+.client-item{
+    display: flex;
+}
 .client-item > div{
-    width: 50%;
-    float: left;
+   flex: 1;
     box-sizing: border-box;
 }
 .client-item__image img{
@@ -271,10 +278,11 @@
 }
 .blog-items{
     margin-top: 3.2rem;
+    display: flex;
+    justify-content: space-between;
 }
 .blog-item{
-    display: inline-block;
-    width: 30%;
+    
     margin-right: 3%;
     box-sizing: border-box;
     overflow: hidden;
@@ -340,8 +348,9 @@
 }
 /* partner style */
 
-.partner{
-    display: inline-block;
+.partners{
+   display: flex;
+   justify-content: space-between;
     padding: 1.5rem;
 }
 @media only screen and (max-width:991px){
@@ -355,9 +364,11 @@
     .statistics{
         padding-top: 1rem;
         text-align: center;
+        justify-content: center;
     }
      /* about me */
-     .about-image img{
+     
+     .about-image {
         display: none;
     }
     .about div{
@@ -370,9 +381,11 @@
     .services{
         padding: 1.5rem 0;
     }
+    .service-cards{
+        flex-wrap: wrap;
+    }
     .service-card{
-        
-        width: 48%;
+        flex-basis: 45%;
         margin-right: 10px;
         margin-bottom: 20px;
     }
