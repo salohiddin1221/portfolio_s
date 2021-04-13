@@ -80,6 +80,11 @@ header{
     z-index: 1;
 }
 
+header .container{
+    display: flex;
+    align-items: center;
+}
+
 /* responsive  navbar */
 
 #check{
@@ -156,14 +161,7 @@ button:hover{
 .main-header__brand img{
     width: 64px;
 }
-.main-header__brand{
-    display: inline-block;
-    vertical-align: middle;
-}
-.main-nav{
-display: inline-block;
-vertical-align: middle;
-}
+
 .main-nav__item{
     display: inline-block;
     padding: 10px;
