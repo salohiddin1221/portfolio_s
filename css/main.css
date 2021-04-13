@@ -381,7 +381,7 @@
     .services{
         padding: 1.5rem 0;
     }
-    .service-cards{
+    .services-cards{
         flex-wrap: wrap;
     }
     .service-card{
@@ -393,6 +393,9 @@
     .clients{
         padding: 1.5rem 0;
     }
+    .client-item{
+        flex-direction: column;
+    }
     .client-item div{
         width: 100%;
         float: none;
@@ -401,8 +404,11 @@
     .blog{
         padding: 1.5rem 0;
     }
+    .blog-items{
+        flex-wrap: wrap;
+    }
     .blog-item{
-        width: 47%;
+       flex-basis: 45%;
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -439,6 +445,9 @@
         width: 100%;
     }
     /* statistics section */
+    .statistics{
+        flex-direction: column;
+    }
     .statistics-item{
         width: 100%;
         margin-bottom: 20px;
@@ -462,7 +471,7 @@
         padding: 1.5rem 0;
     }
     .service-card{
-        width: 100%;
+        flex-basis: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -497,7 +506,7 @@
         padding: 1.5rem 0;
     }
     .blog-item{
-        width: 100%;
+        flex-basis: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
@@ -505,12 +514,15 @@
     /* partniers */
     .partners{
         padding: 1.5rem 0;
+        display:flex ;
+        flex-direction: column;
     }
     .partner{
-        display:block ;
+        
+       
         padding: 0;
         text-align: center;
-        width: 100%;
+       
         margin-bottom: 50px;
     }
     .partner-1, .partner-2{
